@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/Frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/fondo1" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="186dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/pac_man_logo_1979_ok" />
+
+        <ImageButton
+            android:id="@+id/jugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@null"
+            android:contentDescription="jugar"
+            android:enabled="false"
+            android:visibility="invisible"
+            android:translationY="-15dp"
+            app:srcCompat="@drawable/boton_jugar_blanco" />
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_margin="30dp"
+        android:translationY="50dp"
+        app:cardBackgroundColor="#4A619D"
+        app:cardCornerRadius="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde"
+            android:clickable="false"
+            android:fontFamily="@font/montserrat_medium"
+            android:paddingTop="20dp"
+            android:paddingBottom="310dp"
+            android:shadowColor="#FF8C00"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1.5"
+            android:text="SELECCIONA LA DIFICULTAD"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FFFE00"
+            android:textColorLink="#000574"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/rosaFacil"
+            android:layout_width="51dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:translationY="80dp"
+            app:srcCompat="@drawable/fantasma_rosa" />
+
+        <ImageView
+            android:id="@+id/rojoIntermedio"
+            android:layout_width="51dp"
+            android:layout_height="85dp"
+            android:translationX="220dp"
+            android:translationY="180dp"
+            app:srcCompat="@drawable/fantasma_rojo" />
+
+        <ImageButton
+            android:id="@+id/facil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:backgroundTint="@color/black"
+            android:contentDescription="Modo facil"
+            android:translationY="130dp"
+            app:srcCompat="@drawable/boton_facil_v4" />
+        <ImageButton
+        android:id="@+id/facilOn"
+        android:visibility="invisible"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:backgroundTint="@color/black"
+        android:contentDescription="facil"
+        android:translationY="130dp"
+        app:srcCompat="@drawable/boton_facil_on" />
+
+        <ImageView
+            android:id="@+id/azulIntermedio"
+            android:layout_width="51dp"
+            android:layout_height="85dp"
+            android:translationX="80dp"
+            android:translationY="180dp"
+            app:srcCompat="@drawable/fantasma_azul" />
+
+        <ImageButton
+            android:id="@+id/intermedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:backgroundTint="@color/black"
+            android:contentDescription="Modo intermedio"
+            android:translationY="230dp"
+            app:srcCompat="@drawable/boton_intermedio_v4" />
+        <ImageButton
+            android:id="@+id/intermedioOn"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:backgroundTint="@color/black"
+            android:contentDescription="intermedio"
+            android:translationY="230dp"
+            app:srcCompat="@drawable/boton_intermedio_on" />
+        <ImageView
+            android:id="@+id/naranjaDificil"
+            android:layout_width="51dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:translationY="280dp"
+            app:srcCompat="@drawable/fantasma_naranja" />
+
+        <ImageButton
+            android:id="@+id/dificil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:backgroundTint="@color/black"
+            android:contentDescription="Modo dificil"
+            android:translationY="330dp"
+            app:srcCompat="@drawable/boton_dificil_v4" />
+        <ImageButton
+            android:id="@+id/dificilOn"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:backgroundTint="@color/black"
+            android:contentDescription="dificil"
+            android:translationY="330dp"
+            app:srcCompat="@drawable/boton_dificil_on" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
